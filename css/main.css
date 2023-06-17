@@ -1,4 +1,96 @@
-h1 {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&display=swap");
+:root {
+  --main_color: #006aff;
+  --dark_color: #323031;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Exo 2", sans-serif;
+  outline: none;
+}
+body {
+  background: #eaeaea;
+}
+
+/* Button Style element */
+.btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+}
+.btn ion-icon {
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+  --ionicon-stroke-width: 50px;
+}
+
+.container {
+  margin: auto;
+  width: 1360px;
+}
+header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 20px 20px 28px;
+  border-radius: 0 0 30px 30px;
+}
+header .category {
+  margin: 0 0 0 50px;
+  background: var(--main_color);
+}
+header .category ion-icon {
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+  --ionicon-stroke-width: 40px;
+}
+header .search {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+}
+header .search input {
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid #ccc;
+  font-size: 18px;
+  color: var(--dark_color);
+  font-weight: 500;
+}
+header .search button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: inherit;
+  background: var(--main_color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+header .search button ion-icon {
+  --ionicon-stroke-width: 50px;
+}
+header .auth {
+  background: var(--main_color);
 }
